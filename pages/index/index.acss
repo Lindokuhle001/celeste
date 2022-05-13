@@ -1,0 +1,92 @@
+.logo {
+  /* height: 104rpx;
+  width: 270rpx;
+  left: 240rpx;
+  top: 224rpx;
+  border-radius: 0rpx; */
+
+  position: absolute;
+  left: 32%;
+  right: 32%;
+  top: 16.79%;
+  bottom: 75.41%;
+
+  font-family: "Oleo Script", cursive;
+  font-family: "Oleo Script";
+  font-style: bold;
+  font-weight: 400;
+  font-size: 100rpx;
+  line-height: 138rpx;
+  text-align: end;
+
+  color: #e6e8ec;
+
+  border-bottom: 2rpx solid #bf9b30;
+  text-shadow: 0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61),
+    0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61),
+    0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61),
+    0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61);
+}
+
+.slogan {
+  position: absolute;
+  left: 28.67%;
+  right: 26.67%;
+  top: 26.09%;
+  bottom: 68.89%;
+
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42rpx;
+  line-height: 58rpx;
+  text-align: center;
+
+  color: #e6e8ec;
+}
+
+.menu {
+  position: absolute;
+  width: 262rpx;
+  height: 49rpx;
+  left: 244rpx;
+  top: 882rpx;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42rpx;
+  line-height: 49rpx;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+/*  */
+.branch1 {
+  position: absolute;
+  width: 667rpx;
+  height: 415rpx;
+  left: -13rpx;
+  top: 1077rpx;
+}
+
+.branch2 {
+  position: absolute;
+  width: 556.76rpx;
+  height: 346.52rpx;
+  left: -240.6rpx;
+  top: 166rpx;
+
+  transform: rotate(54.93deg);
+}
+
+.branch3 {
+  position: absolute;
+  width: 572.85rpx;
+  height: 356.42rpx;
+  left: 480.62rpx;
+  top: 403.26rpx;
+
+  transform: rotate(-123.91deg);
+}

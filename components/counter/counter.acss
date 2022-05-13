@@ -1,0 +1,93 @@
+.personContainer {
+  position: absolute;
+  width: 570rpx;
+  height: fit-content;
+  min-height: 248rpx;
+  max-height: 363;
+  left: 90rpx;
+  top: 1378rpx;
+
+  background: #303030;
+  border-radius: 69rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+}
+
+.toggleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.toggle {
+  width: 42rpx;
+  height: 42rpx;
+  text-align: center;
+  color: #bf9b30;
+  font-weight: bolder;
+  margin: 30rpx 20rpx 20rpx 20rpx;
+  border-radius: 50%;
+  border: 3rpx solid #bf9b30;
+}
+
+.numberOfPersons {
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42rpx;
+  line-height: 58rpx;
+  margin: 20rpx;
+  color: #e6e8ec;
+}
+
+.increasePersons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3rpx solid #bf9b30;
+}
+
+.decreasePersons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3rpx solid #bf9b30;
+}
+.number {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 35rpx;
+  text-align: center;
+  margin: 10rpx;
+
+  color: #e6e8ec;
+}
+.cost {
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: #b3b3b3;
+  margin: 10rpx;
+  text-shadow: 0rpx 4rpx 4rpx rgba(0, 0, 0, 0.25);
+}
+
+.order {
+  height: 73rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx;
+  width: 80%;
+  background: #303030;
+  color: #fff;
+  border: 5rpx solid #b3b3b3;
+  border-radius: 40rpx;
+}

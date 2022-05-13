@@ -1,0 +1,49 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  /* width: 585rpx;
+  height: 607rpx; */
+  margin: 30rpx 0rpx;
+
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64rpx;
+  line-height: 89rpx;
+
+  color: #e6e8ec;
+  text-shadow: 0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932);
+}
+
+.text {
+  font-family: "Raleway";
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42rpx;
+  line-height: 58rpx;
+  text-align: center;
+
+  color: #e6e8ec;
+}
+
+.order {
+  height: 73rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30rpx;
+  /* width: 80%; */
+  background: #303030;
+  color: #fff;
+  border: 5rpx solid #b3b3b3;
+  border-radius: 40rpx;
+}

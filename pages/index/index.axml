@@ -1,0 +1,14 @@
+<scroll-view scroll-x="{{true}}">
+  <text class="logo">
+  Céleste
+  </text>
+  <text class="slogan">
+  It's an expirience
+  </text>
+  <text class="menu" onTap="navigateToTasting">
+  Tasting menu
+  </text>
+  <image class="branch1" src="../../assets/branch.svg"/>
+  <image class="branch2" src="../../assets/branch.svg"/>
+  <image class="branch3" src="../../assets/branch.svg"/>
+</scroll-view>

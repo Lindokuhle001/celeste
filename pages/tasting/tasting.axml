@@ -1,0 +1,16 @@
+<text class="heading">Tasting Menu</text>
+<view class="menuContainer">
+  <view class="leaves">
+    <image class="leftleaf" mode="scaleToFill" src="../../assets/leftleaf.svg"/>
+    <image class="rightleaf" mode="scaleToFill" src="../../assets/rightleaf.svg"/>
+  </view>
+  <view a:for="{{array}}" class="menuItem">
+    <view>
+      <text class="meal">{{item.meal}}</text>
+    </view>
+    <view>
+      <text class="drink">{{item.drink}}</text>
+    </view>
+  </view>
+</view>
+<counter class="personContainer" onRun="personsCounter" value="{{counterProps}}"></counter>

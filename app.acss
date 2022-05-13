@@ -1,0 +1,11 @@
+page {
+  /* position: absolute;
+  width: 750rpx;
+  height: 1334rpx;
+  left: 128rpx;
+  top: 746rpx; */
+  /* background-image: url(./pages/index/branchSVG.svg); */
+  overflow: hidden;
+  background-attachment: scroll;
+  background: #14141f;
+}

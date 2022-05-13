@@ -1,0 +1,19 @@
+<view class="body">
+  <view class="heading">
+    <view >
+  thankyou,
+    </view>
+    <view >
+  {{name}}
+    </view>
+  </view>
+  <view class="text">
+  Your order will be brought to table {{table}} shortly
+  </view>
+  <view class="text">
+Your invoice has been sent to {{email}}
+  </view>
+  <button class="order" type="primary" onTap="redirectToHome">
+home
+  </button>
+</view>

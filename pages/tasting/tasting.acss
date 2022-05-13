@@ -1,0 +1,112 @@
+.heading {
+  height: 70rpx;
+  width: 349rpx;
+  left: 201rpx;
+  top: 161rpx;
+  border-radius: nullpx;
+
+  position: absolute;
+  left: 26.8%;
+  right: 26.67%;
+  top: 8.98%;
+  bottom: 87.11%;
+
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64rpx;
+  line-height: 89rpx;
+
+  color: #e6e8ec;
+  text-shadow: 0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932);
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 585rpx;
+  height: 966rpx;
+  left: 83rpx;
+  top: 358rpx;
+
+  border: 3rpx solid #bf9b30;
+  border-radius: 60rpx;
+  overflow: scroll;
+}
+
+.menuItem {
+  margin: 35rpx;
+}
+
+.meal {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30rpx;
+  line-height: 35rpx;
+
+  color: #e6e8ec;
+  max-width: 40rpx;
+}
+
+.drink {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 35rpx;
+
+  color: #b3b3b3;
+}
+
+.personContainer {
+  position: absolute;
+  width: 570rpx;
+  height: fit-content;
+  min-height: 248rpx;
+  max-height: 363;
+  left: 90rpx;
+  top: 1378rpx;
+
+  background: #303030;
+  border-radius: 69rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-bottom: 30rpx;
+}
+
+.leaves {
+  position: relative;
+  width: 230rpx;
+  height: 110rpx;
+  top: -6%;
+
+  background-color: #14141f;
+}
+
+.leftleaf {
+  height: 201rpx;
+  width: 102rpx;
+
+  position: absolute;
+  left: 25rpx;
+  top: -35rpx;
+}
+.rightleaf {
+  height: 170rpx;
+  width: 84rpx;
+  position: absolute;
+  right: 20rpx;
+  top: -50rpx;
+}

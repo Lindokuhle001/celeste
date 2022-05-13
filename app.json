@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tasting/tasting",
+    "pages/summary/summary",
+    "pages/thankYou/thankYou"
+  ],
+  "window": {
+    "defaultTitle": "celeste",
+    "titleBarColor": "#08081b",
+    "backgroundColor": "#14141f"
+  },
+  "allowsBounceVertical": "YES",
+  "pullRefresh": "YES"
+}
