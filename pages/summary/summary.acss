@@ -31,7 +31,7 @@
   flex-direction: column;
   box-sizing: border-box;
 
-  width: 585rpx;
+  max-width: 585rpx;
   font-family: "Raleway";
 
   font-style: normal;
