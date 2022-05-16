@@ -16,7 +16,7 @@
           Number of Persons
           </view>
           <view class="quantity">
-          {{people}}people
+          {{people}} people
           </view>
         </view>
         <view class="cost">
