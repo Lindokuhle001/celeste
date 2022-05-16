@@ -2,15 +2,15 @@
   <text class="heading">Summary</text>
   <view class="menuContainer">
     <view class="orderDetailsContainer">
-      <view class="orderDetails">
-        <view class="menuHeading">
-          <view class="tittle">
+      <view class="menuHeading">
+        <view class="tittle">
       Tasting Menu
-          </view>
-          <view class="perPersonCost">
-      R{{perPersonCost}}pp
-          </view>
         </view>
+        <view class="perPersonCost">
+      R{{perPersonCost}}pp
+        </view>
+      </view>
+      <view class="orderDetails">
         <view class="numberOfPersons">
           <view class="value">
           Number of Persons
@@ -24,7 +24,7 @@
           cost
           </view>
           <view class="quantity">
-          R{{cost}}
+          R{{cost}}.00
           </view>
         </view>
       </view>
@@ -44,7 +44,7 @@
       </view>
     </view>
     <view class="customTip ">
-      <input a:if="{{customTipInput.active}}" placeholder="Enter you amount " onInput="addCustomTip"/>
+      <input a:if="{{customTipInput.active}}" placeholder="Enter you amount " value="" onInput="addCustomTip"/>
     </view>
     <view class="cost">
       <view class="value">

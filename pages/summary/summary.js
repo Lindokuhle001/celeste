@@ -52,6 +52,7 @@ Page({
 
   addCustomTip(event) {
     const customTip = Math.abs(parseInt(event.detail.value));
+    event.detail.value=""
     this.setData({
       tip: customTip
     });
