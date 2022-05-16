@@ -1,3 +1,5 @@
+import store from "/store";
+
 Page({
   data: {
     people: 0,
@@ -56,10 +58,18 @@ Page({
   },
 
   onLoad() {
-    const app = getApp();
+    // using getApp
+    // const app = getApp();
+    // this.setData({
+    //   cost: app.data.numberOfPersons * 100,
+    //   people: app.data.numberOfPersons
+    // });
+
+    // using redux
+
     this.setData({
-      cost: app.data.numberOfPersons * 100,
-      people: app.data.numberOfPersons
+      cost: store.getState().numberOfPersons * 100,
+      people: store.getState().numberOfPersons
     });
     this.toggleActiveTip();
 

@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "@fontsource/open-sans": "^4.5.8"
+    "@fontsource/open-sans": "^4.5.8",
+    "@reduxjs/toolkit": "^1.8.1",
+    "redux": "^4.2.0"
   },
   "name": "celeste",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

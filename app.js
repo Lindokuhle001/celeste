@@ -2,7 +2,7 @@ App({
   data: {
     numberOfPersons: 0,
     name: "lindo",
-    email: "lindokuhle@bbd.co.za",
+    email: "lindo@bbd.co.za",
     table: 3
   },
 
