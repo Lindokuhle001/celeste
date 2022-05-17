@@ -1,3 +1,10 @@
+*{
+  padding: 0rpx;
+  margin: 0rpx;
+  box-sizing: border-box;
+}
+
+
 .body {
   display: flex;
   justify-content: space-around;
@@ -9,7 +16,8 @@
 .heading {
   /* width: 585rpx;
   height: 607rpx; */
-  margin: 30rpx 0rpx;
+  margin: 30rpx 0rpx 90rpx 0rpx;
+
 
   font-family: "Oleo Script";
   font-style: normal;
@@ -18,10 +26,10 @@
   line-height: 89rpx;
 
   color: #e6e8ec;
-  text-shadow: 0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
-    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
-    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
-    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932);
+  text-shadow: 0rpx 0rpx 5rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 5rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 5rpx rgba(255, 191, 0, 0.932),
+    0rpx 0rpx 5rpx rgba(255, 191, 0, 0.932);
 }
 
 .menuContainer {
@@ -30,6 +38,7 @@
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
+  margin: 30rpx 0rpx 90rpx 0rpx;
 
   max-width: 585rpx;
   font-family: "Raleway";
@@ -47,7 +56,7 @@
 }
 
 .orderDetailsContainer {
-  margin: 0rpx;
+  margin-top: 50rpx ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,37 +64,101 @@
 }
 
 .perPersonCost {
-  left: -250rpx;
-  margin: 0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rpx 76rpx ;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 35rpx;
+/* text-align: right; */
+
+color: #BF9B30;
 }
 
-.numberOfPersons,
-.cost,
-.menuHeading {
+.numberOfPersons {
   display: flex;
   justify-content: space-between;
 }
-.tittle {
-  /* margin: 0rpx 50rpx; */
-  /* position: relative; */
+
+.menuHeading {
+  display: flex;
+  justify-content: flex-start;
 }
 
-.quantity,
-.value {
-  margin: 20rpx 50rpx;
+
+.cost {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50rpx;
 }
-/* {
-  margin: 20rpx 50rpx;
-} */
+
+.tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rpx 50rpx;
+  font-family: 'Oleo Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42rpx;
+  /* line-height: 58rpx; */
+  text-align: center;
+}
+
+.quantity
+ {
+  margin: 20rpx 20rpx;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 30rpx;
+line-height: 35rpx;
+text-align: right;
+
+color: #BF9B30;
+}
+.value {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rpx 50rpx ;
+  font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 30rpx;
+line-height: 35rpx;
+} 
 
 .tips {
   display: flex;
+  margin-left: 26rpx;
 }
 
 .tip {
+  padding: 5rpx;
   border: 3rpx solid #e6e8ec;
-  border-radius: 10rpx;
+  border-radius: 19rpx;
   margin: 5rpx;
+  font-family: 'Oleo Script';
+font-style: normal;
+font-weight: 400;
+font-size: 20rpx;
+line-height: 28rpx;
+}
+
+#tipQuantity{
+  margin-right: 137rpx;
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 30rpx;
+line-height: 35rpx;
+text-align: right;
+
+color: #BF9B30;
 }
 
 .activeTip {
@@ -94,8 +167,19 @@
 
 #tipValueContainer {
   display: flex;
-  flex-wrap: wrap;
+  align-content: space-around;
+  /* flex-wrap: wrap; */
 }
+
+#sumTotal{
+  margin: 20rpx 170rpx 20rpx 80rpx;
+}
+
+
+#sumTotalLabel{
+  margin: 20rpx 60rpx 20rpx 160rpx;
+}
+
 .order {
   height: 73rpx;
   display: flex;
@@ -107,4 +191,16 @@
   color: #fff;
   border: 5rpx solid #b3b3b3;
   border-radius: 40rpx;
+}
+
+.input{
+  width: 211px;
+height: 28px;
+
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 24rpx;
+line-height: 28rpx;
+
 }
