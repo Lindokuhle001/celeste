@@ -1,8 +1,9 @@
 .body {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  height: 100vh
 }
 
 .heading {
@@ -24,6 +25,7 @@
 }
 
 .text {
+  margin: 20rpx;
   font-family: "Raleway";
 
   font-style: normal;
@@ -41,7 +43,7 @@
   align-items: center;
   justify-content: center;
   margin: 30rpx;
-  /* width: 80%; */
+  width: 80%;
   background: #303030;
   color: #fff;
   border: 5rpx solid #b3b3b3;

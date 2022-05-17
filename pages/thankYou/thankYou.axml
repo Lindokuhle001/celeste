@@ -7,11 +7,13 @@
   {{name}}
     </view>
   </view>
+  <view>
   <view class="text">
   Your order will be brought to table {{table}} shortly
   </view>
   <view class="text">
 Your invoice has been sent to {{email}}
+  </view>
   </view>
   <button class="order" type="primary" onTap="redirectToHome">
 home
