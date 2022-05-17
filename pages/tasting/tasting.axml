@@ -6,6 +6,9 @@
     <image class="leftleaf" mode="scaleToFill" src="../../assets/leftleaf.svg"/>
     <image class="rightleaf" mode="scaleToFill" src="../../assets/rightleaf.svg"/>
   </view>
+  <view class="filler">
+    
+  </view>
   <view a:for="{{array}}" class="menuItem">
     <view>
       <text class="meal">{{item.meal}}</text>

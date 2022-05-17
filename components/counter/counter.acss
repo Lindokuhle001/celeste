@@ -1,11 +1,11 @@
 .personContainer {
-  position: absolute;
+  /* position: absolute; */
   width: 570rpx;
-  height: fit-content;
+  /* height: fit-content;
   min-height: 248rpx;
   max-height: 363;
   left: 90rpx;
-  top: 1378rpx;
+  top: 1378rpx; */
 
   background: #303030;
   border-radius: 69rpx;

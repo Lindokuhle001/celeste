@@ -6,19 +6,7 @@
 }
 
 .heading {
-  /* height: 70rpx; */
-  /* width: 349rpx; */
-  margin: 30rpx;
-  /* left: 201rpx;
-  top: 161rpx; */
-  /* border-radius: nullpx;
-   */
-
-  /* position: absolute;
-  left: 26.8%;
-  right: 26.67%;
-  top: 8.98%;
-  bottom: 87.11%; */
+  margin: 30rpx 0rpx 90rpx 0rpx;
 
   font-family: "Oleo Script";
   font-style: normal;
@@ -41,19 +29,21 @@
   box-sizing: border-box;
   margin: 30rpx 0rpx;
 
-  /* position: absolute; */
   width: 585rpx;
-  /* min-height: 966rpx; */
-  /* left: 83rpx;
-  top: 358rpx; */
 
   border: 3rpx solid #bf9b30;
   border-radius: 60rpx;
-  /* overflow: scroll; */
+  position: relative;
+
+}
+
+.filler{
+  height: 60rpx
 }
 
 .menuItem {
-  margin: 35rpx;
+  margin:25rpx 50rpx  ;
+  align-content: flex-end;
 }
 
 .meal {
@@ -84,16 +74,17 @@
   border-radius: 69rpx;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
   margin-bottom: 30rpx;
+
 }
 
 .leaves {
-  position: relative;
+  position:absolute;
   width: 230rpx;
   height: 110rpx;
-  top: -6%;
+  top: -60rpx;
 
   background-color: #14141f;
 }
