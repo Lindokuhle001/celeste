@@ -16,42 +16,19 @@ Page({
           "Seared anhi tuna with provincial vegetables and tapenade croutons",
         drink: "Wine pairing: bizoe semillon"
       },
-      {
-        meal: "Bream with asparagus, tempura mussels and a lime velouté",
-        drink: "Wine pairing:  red city blend"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-      {
-        meal: "Dark chocolate panna cotta with a rhubarb and cherry compote",
-        drink: "Wine pairing: clarington sauvignon blanc"
-      }
+      // {
+      //   meal: "Bream with asparagus, tempura mussels and a lime velouté",
+      //   drink: "Wine pairing:  red city blend"
+      // },
+      // {
+      //   meal: "Aged gouda with espresso, hazelnut and onion",
+      //   drink: "Wine pairing: thelema early harvest"
+      // },
+
+      // {
+      //   meal: "Dark chocolate panna cotta with a rhubarb and cherry compote",
+      //   drink: "Wine pairing: clarington sauvignon blanc"
+      // }
     ]
   },
 

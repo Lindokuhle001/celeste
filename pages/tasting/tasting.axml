@@ -1,3 +1,5 @@
+
+<view class="body">
 <text class="heading">Tasting Menu</text>
 <view class="menuContainer">
   <view class="leaves">
@@ -13,4 +15,5 @@
     </view>
   </view>
 </view>
-<counter class="personContainer" onRun="personsCounter" value="{{counterProps}}"></counter>
+<counter class="personContainer" onRun="personsCounter" value="{{counterProps}}"></counter>  
+</view>

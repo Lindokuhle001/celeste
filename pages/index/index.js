@@ -15,10 +15,10 @@ Page({
   },
 
   navigateToTasting() {
-    my.showLoading({
-      content: "loading...",
-      delay: 0
-    });
+    // my.showLoading({
+    //   content: "loading...",
+    //   delay: 0
+    // });
     my.navigateTo({
       url: "../tasting/tasting"
     });
