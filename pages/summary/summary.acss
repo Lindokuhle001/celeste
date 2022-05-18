@@ -172,7 +172,7 @@ color: #BF9B30;
 }
 
 #sumTotal{
-  margin: 20rpx 170rpx 20rpx 80rpx;
+  margin: 20rpx 160rpx ;
 }
 
 

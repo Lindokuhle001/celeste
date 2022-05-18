@@ -1,26 +1,30 @@
+import store from "./store";
+
 App({
   data: {
     numberOfPersons: 0,
     name: "lindo",
     email: "lindo@bbd.co.za",
-    table: 3
+    table: 3,
+    url: "http://localhost:3000/user"
   },
 
-  onLaunch(options) {
-    // called when opened
+  onLaunch() {
+    try {
+      this.initialise();
+    } catch (error) {
+      my.alert({content: 'fail'});
+    } 
   },
-  onShow(options) {
-    // called when opened or come foreground
-  },
-  onHide() {
-    // called when it goes background
-  },
-  onError(msg) {
-    // called on JavaScript error or API invoke exception
-    // console.log(msg);
-  },
-  // global data
-  globalData: {
-    foo: true
+
+
+  async initialise() {
+    const response = await my.request({
+      url: "http://localhost:3000/price",
+      method: "GET",
+      dataType: "json"
+    });
+
+    console.log(response.data);
   }
 });
