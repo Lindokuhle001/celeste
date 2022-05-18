@@ -19,9 +19,7 @@ Component({
   methods: {
     decreasePersons() {
       store.dispatch({ type: "counter/decremented" });
-      // {value: 1}
-
-      console.log(store.getState());
+      console.log(store.getState()); 
 
       this.setData({
         numberOfPersons: --this.data.numberOfPersons
@@ -30,7 +28,6 @@ Component({
     },
     increasePersons() {
       store.dispatch({ type: "counter/incremented" });
-      // {value: 2}
       console.log(store.getState());
 
       this.setData({

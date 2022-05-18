@@ -13,10 +13,9 @@ App({
     try {
       this.initialise();
     } catch (error) {
-      my.alert({content: 'fail'});
-    } 
+      my.alert({ content: "fail" });
+    }
   },
-
 
   async initialise() {
     const response = await my.request({
@@ -25,6 +24,8 @@ App({
       dataType: "json"
     });
 
-    console.log(response.data);
+    const perPersonCost = response.data.perPersonCost;
+    store.dispatch({ type: "initialise", payload: perPersonCost });
+    console.log(store.getState());
   }
 });

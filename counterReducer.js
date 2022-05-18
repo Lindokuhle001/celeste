@@ -1,5 +1,16 @@
-export default function counterReducer(state = { numberOfPersons: 1 }, action) {
+export default function counterReducer(
+  state = { numberOfPersons: 1, perPersonCost: 0 },
+  action
+) {
   switch (action.type) {
+    case "initialise":
+      console.log(action);
+      
+      return {
+        ...state,
+        perPersonCost: action.payload
+      };
+
     case "counter/incremented":
       return {
         ...state,
