@@ -16,7 +16,7 @@
     Number of persons
   </view>
   <view class="cost">
-    R100 per person
+    R{{perPersonCost}} per person
   </view>
   <button a:if="{{numberOfPersons>=1}}" class="order" type="primary" onTap="navigateToSummary" id="button">
   Add to Order

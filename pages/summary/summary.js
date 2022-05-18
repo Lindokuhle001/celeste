@@ -6,7 +6,7 @@ Page({
     cost: 0,
     tip: 0,
     customTipInput: { active: false, class: "activeTip" },
-    perPersonCost: 100,
+    perPersonCost: 0,
     tipArray: [
       { value: 10, class: "" },
       { value: 15, class: "" },
@@ -52,25 +52,17 @@ Page({
 
   addCustomTip(event) {
     const customTip = Math.abs(parseInt(event.detail.value));
-    event.detail.value=""
+    event.detail.value = "";
     this.setData({
       tip: customTip
     });
   },
 
   onLoad() {
-    // using getApp
-    // const app = getApp();
-    // this.setData({
-    //   cost: app.data.numberOfPersons * 100,
-    //   people: app.data.numberOfPersons
-    // });
-
-    // using redux
-
     this.setData({
       cost: store.getState().numberOfPersons * 100,
-      people: store.getState().numberOfPersons
+      people: store.getState().numberOfPersons,
+      perPersonCost: store.getState().perPersonCost
     });
     this.toggleActiveTip();
 

@@ -2,7 +2,7 @@ import store from "../../store";
 
 Component({
   mixins: [],
-  data: { numberOfPersons: 0, maxNumberOfCustomers: 0 },
+  data: { numberOfPersons: 0, maxNumberOfCustomers: 0, perPersonCost: 0 },
   props: {
     value: "",
     onRun() {}
@@ -10,7 +10,8 @@ Component({
   didMount() {
     this.setData({
       numberOfPersons: this.props.value.numberOfPersons,
-      maxNumberOfCustomers: this.props.value.maxNumberOfCustomers
+      maxNumberOfCustomers: this.props.value.maxNumberOfCustomers,
+      perPersonCost: store.getState().perPersonCost
     });
     this.props.onRun(this.data.numberOfPersons);
   },
@@ -19,19 +20,17 @@ Component({
   methods: {
     decreasePersons() {
       store.dispatch({ type: "counter/decremented" });
-      console.log(store.getState()); 
 
       this.setData({
-        numberOfPersons: --this.data.numberOfPersons
+        numberOfPersons: store.getState().numberOfPersons
       });
       this.props.onRun(this.data.numberOfPersons);
     },
     increasePersons() {
       store.dispatch({ type: "counter/incremented" });
-      console.log(store.getState());
 
       this.setData({
-        numberOfPersons: ++this.data.numberOfPersons
+        numberOfPersons: store.getState().numberOfPersons
       });
       this.props.onRun(this.data.numberOfPersons);
     },
