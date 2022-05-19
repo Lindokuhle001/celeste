@@ -1,5 +1,5 @@
 import store from "../../store";
-import { menuController } from "../../services/controller";
+import { menuController } from "../../services/menuController";
 
 Page({
   data: {
