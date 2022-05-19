@@ -1,5 +1,6 @@
-import store from "./store";
+// import store from "./store";
 import { menuController } from "./services/controller";
+import { priceController } from "./services/priceController";
 
 App({
   data: {
@@ -12,22 +13,11 @@ App({
 
   onLaunch() {
     menuController();
-
-    try {
-      this.getPrice();
-    } catch (error) {
-      my.alert({ content: "fail" });
-    }
-  },
-
-  async getPrice() {
-    const response = await my.request({
-      url: "http://localhost:3000/price",
-      method: "GET",
-      dataType: "json"
-    });
-
-    const perPersonCost = response.data.perPersonCost;
-    store.dispatch({ type: "initialise", payload: perPersonCost });
+    priceController();
+    // try {
+    //   this.getPrice();
+    // } catch (error) {
+    //   my.alert({ content: "fail" });
+    // }
   }
 });

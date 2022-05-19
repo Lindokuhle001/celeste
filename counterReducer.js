@@ -4,7 +4,7 @@ export default function counterReducer(
 ) {
 
   switch (action.type) {
-    case "initialise":
+    case "added price":
       return {
         ...state,
         perPersonCost: action.payload
