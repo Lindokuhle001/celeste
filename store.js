@@ -1,6 +1,6 @@
 import { createStore } from "redux";
-import counterReducer from "./reducer.js";
+import reducer from "./reducer.js";
 
-let store = createStore(counterReducer);
+let store = createStore(reducer);
 
 export default store;
