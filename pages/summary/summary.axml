@@ -57,6 +57,6 @@
   </view>
 </view>
 
-<button class="order" a:if="{{tip>0}}" onTap="navigateTothankyou">
+<button class="order" a:if="{{tip>0}}" onTap="postOrder">
 Pay with VodaPay
 </button>

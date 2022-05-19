@@ -1,4 +1,5 @@
 import store from "../../store";
+import { menuController } from "../../services/controler";
 
 Page({
   data: {
@@ -18,28 +19,9 @@ Page({
   },
 
   onLoad() {
-        this.setData({
+    menuController();
+    this.setData({
       array: store.getState().menu
     });
-
-    // try {
-    //   this.initialise();
-    // } catch (error) {
-    //   my.alert({ content: "fail" });
-    // }
   }
-
-  // async initialise() {
-  //   const response = await my.request({
-  //     url: "http://localhost:3000/menu",
-  //     method: "GET",
-  //     dataType: "json"
-  //   });
-
-  //   const menu = response.data;
-  //   store.dispatch({ type: "added menu", payload: menu });
-  //   this.setData({
-  //     array: store.getState().menu
-  //   });
-  // }
 });

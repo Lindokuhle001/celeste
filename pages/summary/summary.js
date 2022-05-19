@@ -71,6 +71,20 @@ Page({
     this.toggleActiveTip();
   },
 
+  postOrder() {
+    my.request({
+      url: "http://localhost:3000/orders",
+      method: "POST",
+      data: {
+        numberOfPeople: this.data.people,
+        cost: this.data.cost,
+        tip: this.data.tip
+      }
+    });
+
+    this.navigateTothankyou();
+  },
+
   navigateTothankyou() {
     my.navigateTo({
       url: "../thankYou/thankYou"
