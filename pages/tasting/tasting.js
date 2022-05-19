@@ -1,3 +1,5 @@
+import store from "../../store";
+
 Page({
   data: {
     numberOfPersons: 0,
@@ -6,38 +8,34 @@ Page({
       numberOfPersons: 1,
       maxNumberOfCustomers: 3
     },
-    array: [
-      {
-        meal: "Glazed oysters with zucchini pearls and sevruga caviar",
-        drink: "Wine pairing: kleine zalze brut rose"
-      },
-      {
-        meal:
-          "Seared anhi tuna with provincial vegetables and tapenade croutons",
-        drink: "Wine pairing: bizoe semillon"
-      },
-      {
-        meal: "Bream with asparagus, tempura mussels and a lime velouté",
-        drink: "Wine pairing:  red city blend"
-      },
-      {
-        meal: "Aged gouda with espresso, hazelnut and onion",
-        drink: "Wine pairing: thelema early harvest"
-      },
-
-      {
-        meal: "Dark chocolate panna cotta with a rhubarb and cherry compote",
-        drink: "Wine pairing: clarington sauvignon blanc"
-      }
-    ]
+    array: []
   },
 
   personsCounter(number) {
     this.setData({ numberOfPersons: number });
     const app = getApp();
     app.data = { numberOfPersons: this.data.numberOfPersons };
-    // console.log(this.data.numberOfPersons);
   },
 
-  onLoad() {}
+  onLoad() {
+    try {
+      this.initialise();
+    } catch (error) {
+      my.alert({ content: "fail" });
+    } 
+  },
+
+  async initialise() {
+    const response = await my.request({
+      url: "http://localhost:3000/menu",
+      method: "GET",
+      dataType: "json"
+    });
+
+    const menu = response.data;
+    store.dispatch({ type: "added menu", payload: menu });
+    this.setData({
+      array: store.getState().menu
+    });
+  }
 });

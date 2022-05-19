@@ -1,14 +1,17 @@
 export default function counterReducer(
-  state = { numberOfPersons: 1, perPersonCost: 0 },
+  state = { numberOfPersons: 1, perPersonCost: 0, menu: [] },
   action
 ) {
   switch (action.type) {
     case "initialise":
-      console.log(action);
-      
       return {
         ...state,
         perPersonCost: action.payload
+      };
+    case "added menu":
+      return {
+        ...state,
+        menu: action.payload
       };
 
     case "counter/incremented":

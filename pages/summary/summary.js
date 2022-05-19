@@ -60,7 +60,7 @@ Page({
 
   onLoad() {
     this.setData({
-      cost: store.getState().numberOfPersons * 100,
+      cost: store.getState().numberOfPersons * store.getState().perPersonCost,
       people: store.getState().numberOfPersons,
       perPersonCost: store.getState().perPersonCost
     });

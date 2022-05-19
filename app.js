@@ -26,6 +26,5 @@ App({
 
     const perPersonCost = response.data.perPersonCost;
     store.dispatch({ type: "initialise", payload: perPersonCost });
-    console.log(store.getState());
   }
 });
