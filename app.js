@@ -1,4 +1,5 @@
 import store from "./store";
+import menuController from "./services/controler";
 
 App({
   data: {
@@ -10,14 +11,16 @@ App({
   },
 
   onLaunch() {
+    menuController();
+
     try {
-      this.initialise();
+      this.getPrice();
     } catch (error) {
       my.alert({ content: "fail" });
     }
   },
 
-  async initialise() {
+  async getPrice() {
     const response = await my.request({
       url: "http://localhost:3000/price",
       method: "GET",

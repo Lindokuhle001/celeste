@@ -2,6 +2,7 @@ export default function counterReducer(
   state = { numberOfPersons: 1, perPersonCost: 0, menu: [] },
   action
 ) {
+
   switch (action.type) {
     case "initialise":
       return {
@@ -28,4 +29,3 @@ export default function counterReducer(
       return state;
   }
 }
-// export { counterReducer };

@@ -30,7 +30,6 @@ Page({
   },
 
   addTip(event) {
-    console.log(event.target.dataset.value);
     this.toggleActiveTip(event.target.dataset.value.value);
 
     const percentage = event.target.dataset.value.value;
@@ -38,7 +37,6 @@ Page({
       customTipInput: { active: false, class: "activeTip" },
       tip: (percentage * this.data.cost) / 100
     });
-    console.log(this.data.tip);
   },
 
   addInput(event) {
@@ -65,16 +63,14 @@ Page({
       perPersonCost: store.getState().perPersonCost
     });
     this.toggleActiveTip();
-
-    console.log("tested");
   },
+
   onShow() {},
 
   onHide() {
-    console.log("hidden");
-
     this.toggleActiveTip();
   },
+
   navigateTothankyou() {
     my.navigateTo({
       url: "../thankYou/thankYou"
