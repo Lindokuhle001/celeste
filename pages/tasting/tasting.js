@@ -1,28 +1,23 @@
 import store from "../../store";
 import { menuController } from "../../services/menuController";
+import { userController } from "/services/userController";
 
 Page({
   data: {
     numberOfPersons: 0,
     counterProps: {
       path: "../../pages/summary/summary",
-      numberOfPersons: 1,
-      maxNumberOfCustomers: 3
+      numberOfPersons: 1
     },
     array: []
   },
 
-  personsCounter(number) {
-    this.setData({ numberOfPersons: number });
-    const app = getApp();
-    app.data = { numberOfPersons: this.data.numberOfPersons };
-  },
-
   onLoad() {
     menuController();
+    userController();
+
     this.setData({
       array: store.getState().menu
     });
-  },
-
+  }
 });

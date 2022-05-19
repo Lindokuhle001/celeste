@@ -10,10 +10,12 @@ Component({
   didMount() {
     this.setData({
       numberOfPersons: this.props.value.numberOfPersons,
-      maxNumberOfCustomers: this.props.value.maxNumberOfCustomers,
+      maxNumberOfCustomers: store.getState().maxNumberOfCustomers,
       perPersonCost: store.getState().perPersonCost
     });
-    this.props.onRun(this.data.numberOfPersons);
+    // console.log(this.data.maxNumberOfCustomers);
+    
+    // this.props.onRun(this.data.numberOfPersons);
   },
   didUpdate() {},
   didUnmount() {},
@@ -24,7 +26,7 @@ Component({
       this.setData({
         numberOfPersons: store.getState().numberOfPersons
       });
-      this.props.onRun(this.data.numberOfPersons);
+      // this.props.onRun(this.data.numberOfPersons);
     },
     increasePersons() {
       store.dispatch({ type: "counter/incremented" });
@@ -32,7 +34,7 @@ Component({
       this.setData({
         numberOfPersons: store.getState().numberOfPersons
       });
-      this.props.onRun(this.data.numberOfPersons);
+      // this.props.onRun(this.data.numberOfPersons);
     },
     navigateToSummary() {
       my.navigateTo({
