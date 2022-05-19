@@ -1,3 +1,5 @@
+import store from "..//../store";
+
 Page({
   data: {
     name: "",
@@ -10,12 +12,16 @@ Page({
     console.log(app);
 
     this.setData({
-      name: app.data.name,
-      email: app.data.email,
-      table: app.data.table
+      name: store.getState().name,
+      email: store.getState().email,
+      table: store.getState().table
     });
 
-    console.log(app.data.table, app.data.email, app.data.name);
+    console.log(
+      store.getState().table,
+      store.getState().email,
+      store.getState().name
+    );
   },
   redirectToHome() {
     my.redirectTo({
