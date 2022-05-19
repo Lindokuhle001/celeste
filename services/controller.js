@@ -2,7 +2,7 @@ import store from "../store";
 
 let response = null;
 
-export const menuController = async () => {
+const menuController = async () => {
   if (response) {
     return response;
   }
@@ -18,4 +18,5 @@ export const menuController = async () => {
   store.dispatch({ type: "added menu", payload: menu });
   return response;
 };
-//  menuController;
+
+export { menuController };

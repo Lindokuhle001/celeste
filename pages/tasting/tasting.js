@@ -1,5 +1,5 @@
 import store from "../../store";
-import { menuController } from "../../services/controler";
+import { menuController } from "../../services/controller";
 
 Page({
   data: {
@@ -23,5 +23,6 @@ Page({
     this.setData({
       array: store.getState().menu
     });
-  }
+  },
+
 });

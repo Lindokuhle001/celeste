@@ -1,5 +1,5 @@
 import store from "./store";
-import { menuController } from "./services/controler";
+import { menuController } from "./services/controller";
 
 App({
   data: {
