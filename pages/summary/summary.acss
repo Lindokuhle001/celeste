@@ -1,9 +1,8 @@
-*{
+* {
   padding: 0rpx;
   margin: 0rpx;
   box-sizing: border-box;
 }
-
 
 .body {
   display: flex;
@@ -14,11 +13,7 @@
 }
 
 .heading {
-  /* width: 585rpx;
-  height: 607rpx; */
   margin: 30rpx 0rpx 90rpx 0rpx;
-
-
   font-family: "Oleo Script";
   font-style: normal;
   font-weight: 400;
@@ -42,7 +37,6 @@
 
   max-width: 585rpx;
   font-family: "Raleway";
-
   font-style: normal;
   font-weight: 400;
   font-size: 28rpx;
@@ -50,13 +44,12 @@
   text-align: center;
 
   color: #e6e8ec;
-
   border: 3rpx solid #bf9b30;
   border-radius: 60rpx;
 }
 
 .orderDetailsContainer {
-  margin-top: 50rpx ;
+  margin-top: 50rpx;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,15 +60,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0rpx 76rpx ;
-  font-family: 'Raleway';
+  margin: 0rpx 76rpx;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
   font-size: 30rpx;
   line-height: 35rpx;
-/* text-align: right; */
-
-color: #BF9B30;
+  color: #bf9b30;
 }
 
 .numberOfPersons {
@@ -88,7 +79,6 @@ color: #BF9B30;
   justify-content: flex-start;
 }
 
-
 .cost {
   display: flex;
   justify-content: space-between;
@@ -100,37 +90,34 @@ color: #BF9B30;
   justify-content: center;
   align-items: center;
   margin: 0rpx 50rpx;
-  font-family: 'Oleo Script';
+  font-family: "Oleo Script";
   font-style: normal;
   font-weight: 400;
   font-size: 42rpx;
-  /* line-height: 58rpx; */
   text-align: center;
 }
 
-.quantity
- {
+.quantity {
   margin: 20rpx 20rpx;
-  font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 30rpx;
-line-height: 35rpx;
-text-align: right;
-
-color: #BF9B30;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 35rpx;
+  text-align: right;
+  color: #bf9b30;
 }
 .value {
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0rpx 50rpx ;
-  font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 30rpx;
-line-height: 35rpx;
-} 
+  margin: 0rpx 50rpx;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 35rpx;
+}
 
 .tips {
   display: flex;
@@ -142,23 +129,22 @@ line-height: 35rpx;
   border: 3rpx solid #e6e8ec;
   border-radius: 19rpx;
   margin: 5rpx;
-  font-family: 'Oleo Script';
-font-style: normal;
-font-weight: 400;
-font-size: 20rpx;
-line-height: 28rpx;
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20rpx;
+  line-height: 28rpx;
 }
 
-#tipQuantity{
+#tipQuantity {
   margin-right: 137rpx;
-    font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 30rpx;
-line-height: 35rpx;
-text-align: right;
-
-color: #BF9B30;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30rpx;
+  line-height: 35rpx;
+  text-align: right;
+  color: #bf9b30;
 }
 
 .activeTip {
@@ -168,15 +154,30 @@ color: #BF9B30;
 #tipValueContainer {
   display: flex;
   align-content: space-around;
-  /* flex-wrap: wrap; */
 }
 
-#sumTotal{
-  margin: 20rpx 160rpx ;
+.tipSectionItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 50rpx;
+}
+.gap {
+  flex: 0.3;
+}
+.sumTotal {
+  display: flex;
+  align-content: flex-start;
+  flex: 2;
 }
 
+.sumTotalValue {
+  display: flex;
+  align-content: flex-start;
+  flex: 1;
+}
 
-#sumTotalLabel{
+#sumTotalLabel {
   margin: 20rpx 60rpx 20rpx 160rpx;
 }
 
@@ -186,21 +187,19 @@ color: #BF9B30;
   align-items: center;
   justify-content: center;
   margin: 30rpx;
-  /* width: 80%; */
   background: #303030;
   color: #fff;
   border: 5rpx solid #b3b3b3;
   border-radius: 40rpx;
 }
 
-.input{
+.input {
   width: 211px;
-height: 28px;
+  height: 28px;
 
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 400;
-font-size: 24rpx;
-line-height: 28rpx;
-
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24rpx;
+  line-height: 28rpx;
 }

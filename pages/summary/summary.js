@@ -35,7 +35,7 @@ Page({
     const percentage = event.target.dataset.value.value;
     this.setData({
       customTipInput: { active: false, class: "activeTip" },
-      tip: (percentage * this.data.cost) / 100
+      tip: (percentage * this.data.cost.toFixed(2)) / 100
     });
   },
 
@@ -49,7 +49,7 @@ Page({
   },
 
   addCustomTip(event) {
-    const customTip = Math.abs(parseInt(event.detail.value));
+    const customTip = Math.abs(parseInt(event.detail.value).toFixed(2));
     event.detail.value = "";
     this.setData({
       tip: customTip
@@ -58,7 +58,9 @@ Page({
 
   onLoad() {
     this.setData({
-      cost: store.getState().numberOfPersons * store.getState().perPersonCost,
+      cost:
+        store.getState().numberOfPersons *
+        store.getState().perPersonCost.toFixed(2),
       people: store.getState().numberOfPersons,
       perPersonCost: store.getState().perPersonCost
     });

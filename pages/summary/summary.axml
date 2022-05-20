@@ -33,12 +33,13 @@
       <view class="tittle">
       Would you like to add a tip?
       </view>
-      <view id="tipValueContainer" class="tips cost">
-        <view class="tips">
+      <view class="tipSectionItem">
+        <view class="gap"></view>
+        <view class="sumTotal">
           <view a:for="{{tipArray}}" onTap="addTip" data-value="{{item}}" class="tip {{item.class}}">{{item.value}}%</view>
           <view class="{{customTipInput.active && customTipInput.class }} custom tip" onTap="addInput">custom</view>
         </view>
-        <view id="tipQuantity">
+        <view class="sumTotalValue">
           R{{tip}}
         </view>
       </view>
@@ -46,11 +47,14 @@
     <view class="customTip ">
       <input a:if="{{customTipInput.active}}" placeholder="Enter you amount " value="" onInput="addCustomTip" class="input" maxlength="6"/>
     </view>
-    <view class="cost">
-      <view class="value" id="sumTotal">
+    <view class="tipSectionItem">
+      <view class="gap">
+
+      </view>
+      <view class="sumTotal">
           Total cost
       </view>
-      <view class="quantity" id="sumTotal">
+      <view class="sumTotalValue">
           R{{cost + tip}}
       </view>
     </view>
