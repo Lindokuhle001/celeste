@@ -10,10 +10,14 @@
   align-items: center;
   flex-direction: column;
   font-family: "Raleway";
+  margin: 30rpx 0rpx 0rpx 0rpx;
 }
 
 .heading {
-  margin: 30rpx 0rpx 90rpx 0rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 90rpx 0rpx 30rpx 0rpx;
   font-family: "Oleo Script";
   font-style: normal;
   font-weight: 400;
@@ -33,9 +37,8 @@
   justify-content: center;
   flex-direction: column;
   box-sizing: border-box;
-  margin: 30rpx 0rpx 90rpx 0rpx;
 
-  max-width: 585rpx;
+  width: 585rpx;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
@@ -73,10 +76,13 @@
   display: flex;
   justify-content: space-between;
 }
-
+#tittle1 {
+}
 .menuHeading {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  /* width: 100%; */
+  margin-bottom: 50rpx;
 }
 
 .cost {
@@ -175,6 +181,7 @@
   display: flex;
   align-content: flex-start;
   flex: 1;
+  color: #bf9b30;
 }
 
 #sumTotalLabel {
@@ -186,8 +193,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 445rpx;
   margin: 30rpx;
-  background: #303030;
+  background: #14141f;
   color: #fff;
   border: 5rpx solid #b3b3b3;
   border-radius: 40rpx;

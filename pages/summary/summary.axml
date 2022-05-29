@@ -3,10 +3,10 @@
   <view class="menuContainer">
     <view class="orderDetailsContainer">
       <view class="menuHeading">
-        <view class="tittle">
+        <view id="tittle1" class="sumTotal">
       Tasting Menu
         </view>
-        <view class="perPersonCost">
+        <view class="sumTotalValue">
       R{{perPersonCost}}pp
         </view>
       </view>
@@ -29,21 +29,21 @@
         </view>
       </view>
     </view>
-    <view class="tipContainer">
-      <view class="tittle">
+    <!--<view class="tipContainer"> -->
+    <view class="tittle2">
       Would you like to add a tip?
+    </view>
+    <view class="tipSectionItem">
+      <view class="gap"></view>
+      <view class="sumTotal">
+        <view a:for="{{tipArray}}" onTap="addTip" data-value="{{item}}" class="tip {{item.class}}">{{item.value}}%</view>
+        <view class="{{customTipInput.active && customTipInput.class }} custom tip" onTap="addInput">custom</view>
       </view>
-      <view class="tipSectionItem">
-        <view class="gap"></view>
-        <view class="sumTotal">
-          <view a:for="{{tipArray}}" onTap="addTip" data-value="{{item}}" class="tip {{item.class}}">{{item.value}}%</view>
-          <view class="{{customTipInput.active && customTipInput.class }} custom tip" onTap="addInput">custom</view>
-        </view>
-        <view class="sumTotalValue">
+      <view class="sumTotalValue">
           R{{tip}}
-        </view>
       </view>
     </view>
+    <!--</view> -->
     <view class="customTip ">
       <input a:if="{{customTipInput.active}}" placeholder="Enter you amount " value="" onInput="addCustomTip" class="input" maxlength="6"/>
     </view>

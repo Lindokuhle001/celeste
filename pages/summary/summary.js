@@ -57,6 +57,11 @@ Page({
   },
 
   onLoad() {
+    console.log("hi");
+    
+    console.log(this.GetAuthCodeOnSimulator());
+    console.log("hi");
+
     this.setData({
       cost:
         store.getState().numberOfPersons *
@@ -91,5 +96,36 @@ Page({
     my.navigateTo({
       url: "../thankYou/thankYou"
     });
+  },
+
+  async GetAuthCodeOnSimulator() {
+    const clientId = "2020122325111778413994";
+    const userId = "216610000000446291765";
+
+    const options = {
+      method: "POST",
+      url:
+        "https://vodapay-gateway.sandbox.vfs.africa/v2/authorizations/applyAuthCode",
+      headers: {
+        "Content-Type": "application/json",
+        "client-id": clientId,
+        "request-time": "2021-02-22T17:49:26.913+08:00",
+        signature: "algorithm=RSA256, keyVersion=1, signature=testing_signatur",
+        "SOFA-TraceId": "20210224000010086009",
+        "SOFA-RpcId": "0"
+      },
+      data: {
+        clientId,
+        userId,
+        scopes: "auth_user"
+      }
+    };
+    const response = await my.request(options);
+    my.alert({
+      title: "Auth on Simulator",
+      content: response.data.authCode
+    });
+
+    return response.data.authCode;
   }
 });
