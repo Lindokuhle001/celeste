@@ -13,8 +13,8 @@ const priceController = async () => {
     dataType: "json"
   });
 
-  const perPersonCost = response.data.perPersonCost;
-  store.dispatch({ type: "added price", payload: perPersonCost });
+  const pricing = response.data;
+  store.dispatch({ type: "added price", payload: pricing });
   return response;
 };
 

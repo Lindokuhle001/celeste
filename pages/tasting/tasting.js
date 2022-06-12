@@ -14,7 +14,10 @@ Page({
 
   onLoad() {
     menuController();
-    userController();
+    // userController();
+
+    console.log("hi");
+    console.log(store.getState(), "hi");
 
     this.setData({
       array: store.getState().menu

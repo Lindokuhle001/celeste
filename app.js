@@ -4,7 +4,9 @@ import { userController } from "./services/userController";
 
 App({
   onLaunch() {
-    menuController();
+    const menu = menuController();
+    console.log(menu);
+
     priceController();
     userController();
   }

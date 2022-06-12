@@ -8,13 +8,16 @@ Page({
   },
 
   onLoad() {
-    const authCode = getAuthCode();
+    const authResponse = getAuthCode();
+    const authCode = authResponse;
+    console.log(authCode);
+
     // const merchantid = 216620000000188034591;
     const method = "POST";
     const headers = {
       "Content-Type": "application/json"
     };
-    const url = "http://localhost:3000/login";
+    const url = "https://celesteapi.herokuapp.com/login";
     const data = JSON.stringify({
       authCode,
       merchantid: "216620000000188034591"

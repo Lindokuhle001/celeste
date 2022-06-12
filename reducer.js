@@ -7,15 +7,15 @@ export default function reducer(
       return {
         ...state,
         name: action.payload.name,
-        email: action.payload.email,
-        table: action.payload.table,
-        maxNumberOfCustomers: action.payload.maxNumberOfPeople
+        email: action.payload.email
       };
 
     case "added price":
       return {
         ...state,
-        perPersonCost: action.payload
+        perPersonCost: action.payload.perPersonCost,
+        table: action.payload.table,
+        maxNumberOfCustomers: action.payload.maxNumberOfPeople
       };
     case "added menu":
       return {
