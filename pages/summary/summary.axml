@@ -3,10 +3,10 @@
   <view class="menuContainer">
     <view class="orderDetailsContainer">
       <view class="menuHeading">
-        <view id="tittle1" class="sumTotal">
+        <view id="tittle1">
       Tasting Menu
         </view>
-        <view class="sumTotalValue">
+        <view id="tittleValue">
       R{{perPersonCost}}pp
         </view>
       </view>

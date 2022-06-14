@@ -7,9 +7,5 @@ App({
     menuController();
     priceController();
     userController();
-
-    console.log(menuController());
-    console.log(priceController());
-    
   }
 });

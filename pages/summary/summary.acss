@@ -77,12 +77,27 @@
   justify-content: space-between;
 }
 #tittle1 {
+  display: flex;
+  align-content: flex-start;
+  flex: 3;
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42rpx;
+  line-height: 58rpx;
+  color: #e6e8ec;
+}
+
+#tittleValue {
+  display: flex;
+  align-content: flex-start;
+  flex: 1;
 }
 .menuHeading {
   display: flex;
   justify-content: space-between;
-  /* width: 100%; */
-  margin-bottom: 50rpx;
+  width: 100%;
+  /* margin-bottom: 50rpx; */
 }
 
 .cost {
@@ -101,6 +116,17 @@
   font-weight: 400;
   font-size: 42rpx;
   text-align: center;
+}
+
+.tittle2 {
+  width: 80%;
+  display: flex;
+  font-family: "Oleo Script";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 37rpx;
+  line-height: 58rpx;
+  color: #e6e8ec;
 }
 
 .quantity {
