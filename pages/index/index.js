@@ -1,18 +1,16 @@
 import { getAuthCode } from "../../services/authentication";
 import { request } from "../../services/request";
-const app = getApp();
+import store from "../../store";
 
 Page({
   data: {
     name: ""
   },
 
-  onLoad() {
-    const authResponse = getAuthCode();
+  async onLoad() {
+    const authResponse = await getAuthCode();
     const authCode = authResponse;
-    console.log(authCode);
 
-    // const merchantid = 216620000000188034591;
     const method = "POST";
     const headers = {
       "Content-Type": "application/json"
@@ -23,10 +21,12 @@ Page({
       merchantid: "216620000000188034591"
     });
     const response = request(url, headers, data, method);
-    console.log(response);
   },
 
   onShow() {
+
+    console.log(store.getState(), "hi");
+
     const self = this;
     setTimeout(() => {
       my.hideLoading({

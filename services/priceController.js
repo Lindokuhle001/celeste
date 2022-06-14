@@ -8,8 +8,8 @@ const priceController = async () => {
   }
 
   response = await my.request({
-    url: "http://localhost:3000/price",
-    method: "GET",
+    url: "https://celesteapi.herokuapp.com/price",
+    method: "POST",
     dataType: "json"
   });
 

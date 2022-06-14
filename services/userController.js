@@ -8,7 +8,7 @@ const userController = async () => {
   }
 
   response = await my.request({
-    url: "http://localhost:3000/user",
+    url: "https://celesteapi.herokuapp.com/login",
     method: "GET",
     dataType: "json"
   });

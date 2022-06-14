@@ -4,12 +4,14 @@ let response = null;
 
 const menuController = async () => {
   if (response) {
+    console.log("response exists");
+    
     return response;
   }
   response = await my.request({
-    url: "http://localhost:3000/menu",
-    headers,
-    method: "GET",
+    url: "https://celesteapi.herokuapp.com/menu",
+    method: "POST",
+    // data: store.getState().Token,
     dataType: "json"
   });
 
@@ -17,7 +19,6 @@ const menuController = async () => {
   console.log("menu", response);
 
   store.dispatch({ type: "added menu", payload: menu });
-
 
   return response;
 };

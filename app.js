@@ -4,10 +4,12 @@ import { userController } from "./services/userController";
 
 App({
   onLaunch() {
-    const menu = menuController();
-    console.log(menu);
-
+    menuController();
     priceController();
     userController();
+
+    console.log(menuController());
+    console.log(priceController());
+    
   }
 });
