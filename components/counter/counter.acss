@@ -1,13 +1,6 @@
 .personContainer {
-  /* position: absolute; */
   width: 570rpx;
-  /* height: fit-content;
-  min-height: 248rpx;
-  max-height: 363;
-  left: 90rpx;
-  top: 1378rpx; */
-
-  background: #303030;
+  background: var(--counterBackground);
   border-radius: 69rpx;
 
   display: flex;
@@ -26,11 +19,11 @@
   width: 42rpx;
   height: 42rpx;
   text-align: center;
-  color: #bf9b30;
+  color: var(--gold);
   font-weight: bolder;
   margin: 30rpx 20rpx 20rpx 20rpx;
   border-radius: 50%;
-  border: 3rpx solid #bf9b30;
+  border: 3rpx solid var(--gold);
 }
 
 .numberOfPersons {
@@ -40,21 +33,21 @@
   font-size: 42rpx;
   line-height: 58rpx;
   margin: 20rpx;
-  color: #e6e8ec;
+  color: var(--whiteText);
 }
 
 .increasePersons {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3rpx solid #bf9b30;
+  border: 3rpx solid var(--gold);
 }
 
 .decreasePersons {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3rpx solid #bf9b30;
+  border: 3rpx solid var(--gold);
 }
 .number {
   font-family: "Raleway";
@@ -64,8 +57,7 @@
   line-height: 35rpx;
   text-align: center;
   margin: 10rpx;
-
-  color: #e6e8ec;
+  color: var(--whiteText);
 }
 .cost {
   font-family: "Oleo Script";
@@ -74,7 +66,7 @@
   font-size: 36rpx;
   line-height: 50rpx;
   text-align: center;
-  color: #b3b3b3;
+  color: var(--greyText);
   margin: 10rpx;
   text-shadow: 0rpx 4rpx 4rpx rgba(0, 0, 0, 0.25);
 }
@@ -86,8 +78,8 @@
   justify-content: center;
   margin: 30rpx;
   width: 80%;
-  background: #303030;
-  color: #fff;
-  border: 5rpx solid #b3b3b3;
+  background: var(--counterBackground);
+  color: var(--whiteText);
+  border: 5rpx solid var(--greyText);
   border-radius: 40rpx;
 }

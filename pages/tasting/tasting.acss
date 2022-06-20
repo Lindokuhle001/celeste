@@ -1,4 +1,4 @@
-.body{
+.body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,10 +15,9 @@
   line-height: 89rpx;
 
   color: #e6e8ec;
-  text-shadow: 0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
-    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
-    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932),
-    0rpx 0rpx 10rpx rgba(255, 191, 0, 0.932);
+  text-shadow: 0rpx 0rpx 10rpx var(--textShadow),
+    0rpx 0rpx 10rpx var(--textShadow), 0rpx 0rpx 10rpx var(--textShadow),
+    0rpx 0rpx 10rpx var(--textShadow);
 }
 
 .menuContainer {
@@ -31,18 +30,17 @@
 
   width: 585rpx;
 
-  border: 3rpx solid #bf9b30;
+  border: 3rpx solid var(--gold);
   border-radius: 60rpx;
   position: relative;
-
 }
 
-.filler{
-  height: 60rpx
+.filler {
+  height: 60rpx;
 }
 
 .menuItem {
-  margin:25rpx 50rpx  ;
+  margin: 25rpx 50rpx;
   align-content: flex-end;
 }
 
@@ -53,7 +51,7 @@
   font-size: 30rpx;
   line-height: 35rpx;
 
-  color: #e6e8ec;
+  color: var(--whiteText);
   max-width: 40rpx;
 }
 
@@ -64,7 +62,7 @@
   font-size: 30rpx;
   line-height: 35rpx;
 
-  color: #b3b3b3;
+  color: var(--greyText);
 }
 
 .personContainer {
@@ -77,16 +75,15 @@
   justify-content: space-evenly;
   flex-direction: column;
   margin-bottom: 30rpx;
-
 }
 
 .leaves {
-  position:absolute;
+  position: absolute;
   width: 230rpx;
   height: 110rpx;
   top: -60rpx;
 
-  background-color: #14141f;
+  background-color: var(--backgroundColor);
 }
 
 .leftleaf {

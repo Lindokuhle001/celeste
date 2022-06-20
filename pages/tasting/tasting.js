@@ -1,6 +1,6 @@
 import store from "../../store";
 import { menuController } from "../../services/menuController";
-import { userController } from "/services/userController";
+import { priceController } from "/services/priceController";
 
 Page({
   data: {
@@ -12,12 +12,9 @@ Page({
     array: []
   },
 
-  onLoad() {
-    menuController();
-    userController();
-    console.log("hi");
-    
-    console.log(store.getState(), "hi");
+  async onLoad() {
+    await menuController();
+    await priceController();
 
     this.setData({
       array: store.getState().menu

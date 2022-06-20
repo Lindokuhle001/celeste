@@ -22,10 +22,9 @@
   color: #e6e8ec;
 
   border-bottom: 2rpx solid #bf9b30;
-  text-shadow: 0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61),
-    0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61),
-    0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61),
-    0rpx 0rpx 10rpx rgba(191, 155, 48, 0.61);
+  text-shadow: 0rpx 0rpx 10rpx var(--textShadow),
+    0rpx 0rpx 10rpx var(--textShadow), 0rpx 0rpx 10rpx var(--textShadow),
+    0rpx 0rpx 10rpx var(--textShadow);
 }
 
 .slogan {

@@ -1,11 +1,22 @@
 page {
-  /* position: absolute;
-  width: 750rpx;
-  height: 1334rpx;
-  left: 128rpx;
-  top: 746rpx; */
-  /* background-image: url(./pages/index/branchSVG.svg); */
   overflow: hidden;
   background-attachment: scroll;
   background: #14141f;
+}
+
+:root {
+  --textShadow: rgba(255, 191, 0, 0.932);
+  --gold: #bf9b30;
+  --navy: #ff9f00;
+  --whiteText: #e6e8ec;
+  --greyText: #b3b3b3;
+  --backgroundColor: #14141f;
+  --counterBackground: #303030;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
 }
