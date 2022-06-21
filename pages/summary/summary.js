@@ -74,14 +74,53 @@ Page({
     this.toggleActiveTip();
   },
 
-  postOrder() {
-    my.request({
-      url: "http://localhost:3000/orders",
+  async postOrder() {
+    const response = await my.request({
+      url: "https://celesteapi.herokuapp/pay",
       method: "POST",
       data: {
-        numberOfPeople: this.data.people,
-        cost: this.data.cost,
-        tip: this.data.tip
+        productCode: "CASHIER_PAYMENT",
+        salesCode: "51051000101000000011",
+        paymentRequestId: "lind1b17161398737179310015310", //uuid
+        paymentNotifyUrl: "https://celesteapi.herokuapp/payment-notification",
+        paymentExpiryTime: "2022-07-22T17:49:31+08:00",
+        paymentAmount: {
+          currency: "ZAR",
+          value: "6234"
+        },
+        order: {
+          goods: {
+            referenceGoodsId: "goods123",
+            goodsUnitAmount: {
+              currency: "ZAR",
+              value: "6234"
+            },
+            goodsName: "mobile1"
+          },
+          env: {
+            terminalType: "MINI_APP"
+          },
+          orderDescription: "Car",
+          buyer: {
+            referenceBuyerId: "216610000000259832353"
+          }
+        }
+      }
+    });
+
+    console.log(response.data.redirectActionForm.redirectUrl);
+
+    my.tradePay({
+      paymentUrl: response.data.redirectActionForm.redirectUrl, // get the payment from the OpenAPI first
+      success: res => {
+        my.alert({
+          content: JSON.stringify(res)
+        });
+      },
+      fail: res => {
+        my.alert({
+          content: JSON.stringify(res)
+        });
       }
     });
 
@@ -94,12 +133,12 @@ Page({
     });
   },
 
-  getUserDetails() {
-    my.alert({
-      title: "give celeste your personal info",
-      content: ""
-    });
-  },
+  // getUserDetails() {
+  //   my.alert({
+  //     title: "give celeste your personal info",
+  //     content: ""
+  //   });
+  // },
 
   makePayment() {
     request();

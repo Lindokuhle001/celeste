@@ -15,7 +15,8 @@ Page({
   async onLoad() {
     await menuController();
     await priceController();
-
+    console.log(store.getState());
+    
     this.setData({
       array: store.getState().menu
     });

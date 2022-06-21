@@ -20,11 +20,19 @@ Page({
       authCode,
       merchantid: "216620000000188034591"
     });
-    const response = request(url, headers, data, method);
+    const response = await request(url, headers, data, method);
+
+    const userDetails = {
+      name: response.data.userInfo.userInfo.nickName,
+      email: response.data.userInfo.userInfo.contactInfos[0].contactNo
+    };
+    store.dispatch({ type: "added user details", payload: userDetails });
+
+    console.log(response.data.userInfo.userInfo.nickName);
+    console.log(response.data.userInfo.userInfo.contactInfos[0].contactNo);
   },
 
   onShow() {
-
     console.log(store.getState(), "hi");
 
     const self = this;
